@@ -27,7 +27,7 @@ describe("Element actions on the page",  async () => {
     it('Should click on the link', async() => {
          webPage.clickLink.click
          await browser.pause(3000);
-      
+         git remote add origin
 
         
     });
