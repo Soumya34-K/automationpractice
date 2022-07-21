@@ -28,8 +28,6 @@ describe("Element actions on the page",  async () => {
          webPage.clickLink.click
          await browser.pause(3000);
         
-
-        
     });
 
 
