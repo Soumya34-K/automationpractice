@@ -1,3 +1,4 @@
+const { searchInput } = require('../pages/element.pages');
 const webPage=require ('../pages/element.pages');
 
 describe("Element actions on the page",  async () => {
