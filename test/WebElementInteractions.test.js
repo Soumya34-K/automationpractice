@@ -50,7 +50,7 @@ describe("Element actions on the page",  async () => {
 
     it('Should click on Tops ', async() => {
 
-       
+        
         webPage.clickLinkTops
         await browser.pause(2000); 
         
@@ -58,7 +58,9 @@ describe("Element actions on the page",  async () => {
 
     it('Should count total products', async() => {
         
-       webPage.getCount
+       
+        webPage.getCount
+        await browser.pause(2000); 
     });
 
  
