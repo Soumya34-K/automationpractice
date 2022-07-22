@@ -49,7 +49,7 @@ class AutomationPracticePage {
     }
     getFooterLink (){
 
-        this.footerLink.isDisplayed()
+        console.log(this.footerLink.isDisplayed())
     }
     addElementValue (){
 
