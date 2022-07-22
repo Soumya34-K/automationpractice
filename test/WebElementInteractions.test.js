@@ -56,6 +56,11 @@ describe("Element actions on the page",  async () => {
         
     });
 
+    it('Should count total products', async() => {
+        
+       webPage.getCount
+    });
+
  
 });
 
