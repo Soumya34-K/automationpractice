@@ -40,13 +40,20 @@ class AutomationPracticePage {
 
 
     }
+    get productCount() {
+        return $("//span[@class='heading-counter']")
+    }
+    getCount() {
+
+        console.log(this.productCount.getText())
+    }
     getFooterLink (){
 
         this.footerLink.isDisplayed()
     }
     addElementValue (){
 
-        this.searchInput.setValue('T-SHIRTS ');
+        this.searchInput.addValue('T-SHIRTS ');
         this.searchBtn.click()
 
 
