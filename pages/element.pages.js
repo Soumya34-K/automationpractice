@@ -41,7 +41,13 @@ class AutomationPracticePage {
 
     }
     get productCount() {
+
         return $("//span[@class='heading-counter']")
+    }
+    get clickTshirt() {
+
+        return $ ("//li[@class='sfHoverForce sfHover']//a[@title='T-shirts'][normalize-space()='T-shirts']")
+
     }
     getCount() {
 
@@ -64,7 +70,7 @@ class AutomationPracticePage {
     }
     addElementToCart() {
 
-        this.addElementToCart.click()
+        this.addToCart.click()
      
     }
     clickLinkWomen () {
@@ -73,9 +79,13 @@ class AutomationPracticePage {
 
     clickLinkTops () {
 
-        this.clickLinkTops.click ()
+        this.clickTops.click ()
     }
-    
+    clickLinkTshirt () {
+
+        this.clickTshirt .click ()
+    }
+                           
  
 }
 

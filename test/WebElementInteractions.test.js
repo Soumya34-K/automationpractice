@@ -63,6 +63,13 @@ describe("Element actions on the page",  async () => {
         await browser.pause(2000); 
     });
 
+    it('Should click on T shirt', async() => {
+        
+        await browser.url('/')
+        webPage.clickLinkTshirt
+        await browser.pause(2000); 
+    });
+
  
 });
 
