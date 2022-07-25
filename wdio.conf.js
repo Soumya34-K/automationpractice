@@ -21,7 +21,9 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/**/*.js'
+       // './test/**/WebElementInteractions.test.js'
+        './test/**/Demo.test.js'
+
     ],
     // Patterns to exclude.
     exclude: [

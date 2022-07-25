@@ -7,6 +7,7 @@ describe("Element actions on the page",  async () => {
 
         await browser.url('/');
         webPage.pageTitle
+        await browser.pause(3000);
     
     });
 
@@ -15,9 +16,9 @@ describe("Element actions on the page",  async () => {
      
     
      webPage.addElementValue
-     await browser.pause(3000);
 
      expect(webPage.searchInput).toHaveValue('T-SHIRTS')
+     await browser.pause(3000);
 
     });
 
@@ -75,7 +76,7 @@ describe("Element actions on the page",  async () => {
         await browser.url('/')
         webPage.clickLinkDress
         await browser.pause(2000); 
-        
+
     });
 
  

@@ -12,11 +12,11 @@ class AutomationPracticePage {
 
     get searchInput() {
 
-        return $("//input[@id='search_query_top']");
+        return $('#search_query_top');
     }
 
     get searchBtn() {
-        return $('[name="submit_search"]');
+        return $("//button[@name='submit_search']");
     }
     get footerLink() {
 
@@ -66,21 +66,21 @@ class AutomationPracticePage {
     addElementValue (){
 
         this.searchInput.addValue('T-SHIRTS ');
-        this.searchBtn.click()
+        this.searchBtn.click
 
 
     }
     clickLink () {
 
-        this.link.click()
+        this.link.click
     }
     addElementToCart() {
 
-        this.addToCart.click()
+        this.addToCart.click
      
     }
     clickLinkWomen () {
-        this.mouseHover.click()
+        this.mouseHover.click
     }
 
     clickLinkTops () {
@@ -89,14 +89,14 @@ class AutomationPracticePage {
     }
     clickLinkTshirt () {
 
-        this.clickTshirt .click ()
+        this.clickTshirt .click
     }
     
     clickLinkDress () {
 
         let link = this.clickDresses.getText()
         console.log(link)
-        link.click()
+        link.click
 
     }
 
