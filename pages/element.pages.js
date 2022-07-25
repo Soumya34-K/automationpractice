@@ -49,6 +49,12 @@ class AutomationPracticePage {
         return $ ("//li[@class='sfHoverForce sfHover']//a[@title='T-shirts'][normalize-space()='T-shirts']")
 
     }
+    get clickDresses () {
+
+         return $ ('=Dresses')
+
+    }
+
     getCount() {
 
         console.log(this.productCount.getText())
@@ -85,6 +91,15 @@ class AutomationPracticePage {
 
         this.clickTshirt .click ()
     }
+    
+    clickLinkDress () {
+
+        let link = this.clickDresses.getText()
+        console.log(link)
+        link.click()
+
+    }
+
                            
  
 }

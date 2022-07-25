@@ -70,6 +70,14 @@ describe("Element actions on the page",  async () => {
         await browser.pause(2000); 
     });
 
+    it('Should click on Dresses', async() => {
+
+        await browser.url('/')
+        webPage.clickLinkDress
+        await browser.pause(2000); 
+        
+    });
+
  
 });
 
