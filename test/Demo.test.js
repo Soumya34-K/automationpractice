@@ -22,6 +22,16 @@ describe("Element actions on the page",   async() => {
         
     })
 
+    it('should disply My order footer link ', async () => {
+
+        const footerLink = $ ("//a[@title='My orders']")
+        console.log(footerLink.isDisplayed())
+        await browser.pause(2000);
+
+
+
+    })
+
 
 
 
