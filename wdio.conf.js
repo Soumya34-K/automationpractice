@@ -21,7 +21,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-       // './test/**/WebElementInteractions.test.js'
+       //'./test/**/WebElementInteractions.test.js'
         './test/**/Demo.test.js'
 
     ],
