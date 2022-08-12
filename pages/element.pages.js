@@ -1,4 +1,4 @@
-const { default: $ } = require("webdriverio/build/commands/browser/$");
+
 
 class AutomationPracticePage {
 
@@ -17,10 +17,10 @@ class AutomationPracticePage {
         return $ ('[name="submit_search"]');
     }
 
-    async addElementValue (){
+    addElementValue (){
 
-        await this.searchInput.addValue('T-SHIRTS ');
-        await this.searchBtn.click();
+         this.searchInput.setValue('T-SHIRTS ');
+         this.searchBtn.click();
 
 
     }

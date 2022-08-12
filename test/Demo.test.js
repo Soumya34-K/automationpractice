@@ -1,4 +1,3 @@
-const { default: executeAsync } = require("webdriverio/build/commands/browser/executeAsync");
 
 
 describe("Element actions on the page",   async() => {
@@ -48,6 +47,7 @@ describe("Element actions on the page",   async() => {
         const link = await $("//a[contains(text(),'Electronics')]");
         console.log(await link.getText());
         await link.click();
+        await browser.pause(2000);
         const checkBox= await $ ("//span[text()='boAt']");
         await checkBox.click();
         await browser.pause(4000);
@@ -56,8 +56,8 @@ describe("Element actions on the page",   async() => {
 
     it ('Should  add element to  the cart' , async () => {
 
-        const link = $("//span[text()='boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)']")
-        link.click()
+        const boatlink = $("//span[text()='boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)']")
+        boatlink.click()
         const addToCart = $("//input[@id='add-to-cart-button']")
         addToCart.click()
         await browser.pause(4000);
@@ -85,7 +85,7 @@ describe("Element actions on the page",   async() => {
         await button.click()
         const clickFlight = $ ("//a[text()='flights']")
         await clickFlight.click()
-        const flighName = await $("//h6[text()='Emirates Airlines']")
+        const flighName = await $("//h6[text()='Air India']")
         await flighName.click()
         const radioButton = await $("//label[text()=' Stops 1']")
         await radioButton.click()
@@ -94,4 +94,39 @@ describe("Element actions on the page",   async() => {
     })
 
 
-})
+    it('should print visible text and attributes using link text locator',async () => { 
+          browser.url('http://omayo.blogspot.com');       
+          var link = await $('=Selenium143');       
+          console.log(await link.getText()); // outputs: "Selenium143"     
+          console.log(await link.getAttribute('href')); //outputs : "http://www.Selenium143.blogspot.com"    
+          link.click(); //Outputs : Redirection to "http://www.Selenium143.blogspot.com"         
+          await browser.pause(3000);  
+    }); 
+
+    it('should be checked', async ()=> { 
+        browser.url('http://omayo.blogspot.com'); 
+        const checkbox_two = $('[type="checkbox"]:nth-child(2)'); 
+        checkbox_two.scrollIntoView(); browser.pause(3000); 
+        checkbox_two.click(); 
+        await browser.pause(3000); 
+    }); 
+
+    it('Should take screenshot',async()=>{
+
+        await browser.url('http://omayo.blogspot.com'); 
+        await browser.saveScreenshot("./wdio.png");
+
+
+
+
+
+
+    })
+
+
+});
+     
+
+
+
+ 
